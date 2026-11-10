@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="ru" data-theme="graphite">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0b0c0f" />
+  <meta name="description" content="Кирилл — разработчик Telegram-ботов, сайтов и инструментов автоматизации. От идеи до работающего решения." />
+  <title>Кирилл — разработчик | Портфолио</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23141729'/%3E%3Ctext x='32' y='44' font-size='42' text-anchor='middle' fill='%23c0b0ff' font-family='Arial' font-weight='bold'%3Ek%3C/text%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="ambient" aria-hidden="true"><div class="ambient__light ambient__light--one"></div><div class="ambient__light ambient__light--two"></div><div class="ambient__light ambient__light--three"></div></div>
+  <div id="scroll-progress" class="scroll-progress" aria-hidden="true"></div>
+
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="Kirill Portfolio — на главную">
+        <span class="brand__mark">KP</span>
+        <span class="brand__stack"><span class="brand__name">Kirill</span><span class="brand__subtitle">Portfolio</span></span>
+      </a>
+      <nav class="main-nav" id="main-nav" aria-label="Основное меню">
+        <a class="nav-link active" href="#home" data-i18n="navHome">Главная</a>
+        <a class="nav-link" href="#what-i-do" data-i18n="navSkills">Направления</a>
+        <a class="nav-link" href="#about" data-i18n="navAbout">Обо мне</a>
+        <a class="nav-link" href="#contact" data-i18n="navContact">Контакты</a>
+      </nav>
+      <div class="header-actions">
+        <div class="language-switch" role="group" aria-label="Language">
+          <button class="language-switch__btn is-active" data-lang="ru" type="button" aria-pressed="true">RU</button>
+          <span class="language-switch__divider"></span>
+          <button class="language-switch__btn" data-lang="en" type="button" aria-pressed="false">EN</button>
+        </div>
+        <a class="header-contact" href="https://t.me/kirilniga" target="_blank" rel="noreferrer noopener">
+          <span data-i18n="headerContact">Написать мне</span>
+          <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4.5 15.5L15.5 4.5M5.5 4.5h10v10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <button class="menu-toggle" id="menu-toggle" aria-controls="main-nav" aria-expanded="false" type="button" aria-label="Открыть меню"><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="container hero__layout">
+        <div class="hero__copy">
+          <div class="eyebrow hero__eyebrow animate-in"><span data-i18n="heroEyebrow">РАЗРАБОТЧИК · DIGITAL & CODE</span></div>
+          <h1 id="hero-title" class="hero__heading animate-in delay-1"><span data-i18n="heroHello">Привет,</span><br><span class="heading-gradient" data-i18n="heroName">я Кирилл!</span></h1>
+          <p class="hero__lead animate-in delay-2" data-i18n="heroLead">Создаю Telegram-ботов, сайты, скрипты и всё, что можно воплотить с помощью кода. Превращаю идеи в работающие решения.</p>
+          <div class="hero__stats animate-in delay-3">
+            <div class="stat"><div class="stat__value"><span class="stat__number" data-count-to="40">0</span><span class="stat__plus">+</span></div><div class="stat__label" data-i18n="statOrders">выполненных<br>заказов</div></div>
+            <span class="stat-divider" aria-hidden="true"></span>
+            <div class="stat"><div class="stat__value"><span class="stat__number" data-count-to="7">0</span></div><div class="stat__label" data-i18n="statClients">клиентов, чьи проекты<br>работают на моём сервере</div></div>
+          </div>
+          <div class="hero__buttons animate-in delay-4">
+            <a class="button button--primary" href="https://t.me/kirilniga" target="_blank" rel="noopener noreferrer">
+              <svg class="button__icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="m21.8 4.2-3.1 15c-.23 1.06-.84 1.33-1.7.83l-4.7-3.47-2.27 2.19c-.25.25-.46.46-.94.46l.34-4.77 8.7-7.86c.38-.34-.08-.53-.59-.19L6.8 13.16l-4.64-1.45c-1.01-.32-1.03-1.01.21-1.5L20.5 3.2c.84-.31 1.58.19 1.3 1Z"/></svg>
+              <span data-i18n="ctaTalk">Обсудить проект</span>
+              <span class="button__arrow">↗</span>
+            </a>
+            <a class="button button--ghost" href="#about"><span data-i18n="ctaAbout">Подробнее обо мне</span><span class="button__arrow">↘</span></a>
+          </div>
+        </div>
+
+        <div class="hero__art animate-in delay-2" id="hero-art">
+          <div class="hero__art-glow"></div>
+          <div class="hero__art-orbit hero__art-orbit--outer"></div>
+          <div class="hero__art-orbit hero__art-orbit--inner"></div>
+          <div class="hero__art-float" id="hero-float"><img src="assets/dev-orbit.webp" alt="Иконки Visual Studio Code и GitHub, соединённые кольцом" width="1370" height="1148" fetchpriority="high" /></div>
+        </div>
+      </div>
+      <div class="container hero__bottom" aria-hidden="true"></div>
+    </section>
+
+    <!-- A scroll-responsive 3D scene. It is built in CSS and uses no heavy 3D libraries. -->
+    <section class="motion-story" aria-labelledby="story-title" id="story">
+      <div class="motion-story__sticky">
+        <div class="container motion-story__inner">
+          <div class="story-intro">
+            <h2 class="story-intro__title" id="story-title" data-i18n="storyTitle">Одна идея —<br><em>множество возможностей.</em></h2>
+          </div>
+          <div class="story-stage" id="story-stage" aria-label="Анимированная трёхмерная схема направлений разработки">
+            <div class="story-stage__halo" aria-hidden="true"></div>
+            <div class="story-stage__orbit story-stage__orbit--one" aria-hidden="true"></div>
+            <div class="story-stage__orbit story-stage__orbit--two" aria-hidden="true"></div>
+            <div class="story-stage__space" id="story-space">
+              <div class="story-link story-link--left" aria-hidden="true"></div>
+              <div class="story-link story-link--right" aria-hidden="true"></div>
+              <div class="story-link story-link--bottom" aria-hidden="true"></div>
+              <div class="story-core" id="story-core">
+                <div class="story-core__top"><span class="story-core__dots"><i></i><i></i><i></i></span><span>kirill / studio</span><span class="story-core__status" aria-hidden="true"></span></div>
+                <div class="story-core__glyph"><span class="story-core__brace">{</span><span class="story-core__code" aria-hidden="true">&lt;/&gt;</span><span class="story-core__brace">}</span></div>
+                <div class="story-core__bottom"><span class="story-core__pulse"></span><span data-i18n="storyCore">ваша идея → рабочий продукт</span></div>
+              </div>
+              <div class="story-node story-node--telegram" data-story-node="telegram">
+                <div class="story-node__head"><span class="story-node__icon story-node__icon--telegram"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="m21.8 4.2-3.1 15c-.23 1.06-.84 1.33-1.7.83l-4.7-3.47-2.27 2.19c-.25.25-.46.46-.94.46l.34-4.77 8.7-7.86c.38-.34-.08-.53-.59-.19L6.8 13.16l-4.64-1.45c-1.01-.32-1.03-1.01.21-1.5L20.5 3.2c.84-.31 1.58.19 1.3 1Z"/></svg></span><span class="story-node__index">01 /</span></div>
+                <strong data-i18n="storyTelegram">Telegram-боты</strong><span class="story-node__detail" data-i18n="storyTelegramSub">Сценарии · интеграции</span>
+              </div>
+              <div class="story-node story-node--web" data-story-node="web">
+                <div class="story-node__head"><span class="story-node__icon"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="2.8" y="4.8" width="18.4" height="14.4" rx="3" stroke="currentColor" stroke-width="1.6"/><path d="M3 9.1h18M7 7h.01M10 7h.01M8.3 12.4l-2.2 2 2.2 2M15.7 12.4l2.2 2-2.2 2M13.3 11.5l-2.7 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="story-node__index">02 /</span></div>
+                <strong data-i18n="storyWeb">Сайты и Web</strong><span class="story-node__detail" data-i18n="storyWebSub">Красота · удобство</span>
+              </div>
+              <div class="story-node story-node--auto" data-story-node="auto">
+                <div class="story-node__head"><span class="story-node__icon"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M13.2 2.5 5.6 13h6l-.7 8.5L18.4 11h-6l.8-8.5Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></span><span class="story-node__index">03 /</span></div>
+                <strong data-i18n="storyAuto">Автоматизация</strong><span class="story-node__detail" data-i18n="storyAutoSub">Меньше рутины · больше дела</span>
+              </div>
+            </div>
+          </div>
+</div>
+      </div>
+    </section>
+
+    <section class="expertise section" id="what-i-do" aria-labelledby="expertise-title">
+      <div class="container">
+        <div class="section-top reveal">
+          <div><span class="section-kicker"><span>01</span> / <span data-i18n="skillsKicker">ЧЕМ Я ЗАНИМАЮСЬ</span></span><h2 id="expertise-title" class="section-title" data-i18n="skillsTitle">Технологии — это инструмент.<br><span>Главное — твоя идея.</span></h2></div>
+          <p class="section-description" data-i18n="skillsDescription">Помогаю превратить задачи и задумки в удобные цифровые инструменты. От небольшого скрипта до полноценного веб-проекта.</p>
+        </div>
+        <div class="services-grid">
+          <article class="service-card reveal" data-tilt>
+            <div class="service-card__top"><span class="service-card__index">/ 01</span><span class="service-card__icon"><svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><rect x="6" y="7" width="36" height="34" rx="10" stroke="currentColor" stroke-width="1.5"/><path d="M16 20h16M16 27h11M16 14h8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="33" cy="32" r="6" fill="var(--card-icon-fill)" stroke="currentColor" stroke-width="1.5"/><path d="m30.5 32 2 2 3-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span></div>
+            <div><h3 data-i18n="service1Title">Telegram-боты</h3><p data-i18n="service1Desc">Умные сценарии, интеграции с сервисами и автоматизация задач прямо внутри Telegram.</p></div>
+            <div class="service-card__tags"><span>Telegram API</span><span data-i18n="tagIntegrations">Интеграции</span></div>
+          </article>
+          <article class="service-card reveal delay-1" data-tilt>
+            <div class="service-card__top"><span class="service-card__index">/ 02</span><span class="service-card__icon"><svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><rect x="5.5" y="9" width="37" height="30" rx="7" stroke="currentColor" stroke-width="1.5"/><path d="M5.5 18h37M13 13.5h.01M18 13.5h.01M23 13.5h.01" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="m18.5 25-4 4 4 4M29.5 25l4 4-4 4M26 23l-4 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+            <div><h3 data-i18n="service2Title">Сайты и веб-сервисы</h3><p data-i18n="service2Desc">Лендинги, интерфейсы и веб-решения, которые приятно использовать и легко развивать.</p></div>
+            <div class="service-card__tags"><span>Web</span><span>UI / UX</span></div>
+          </article>
+          <article class="service-card reveal delay-2" data-tilt>
+            <div class="service-card__top"><span class="service-card__index">/ 03</span><span class="service-card__icon"><svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="m26 5-2 13 11-2-14 27 2-16-10 2L26 5Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><circle cx="36" cy="11" r="2.5" stroke="currentColor" stroke-width="1.5"/><circle cx="11" cy="37" r="2.5" stroke="currentColor" stroke-width="1.5"/></svg></span></div>
+            <div><h3 data-i18n="service3Title">Автоматизация</h3><p data-i18n="service3Desc">Скрипты, инструменты и нестандартные решения, которые экономят время и убирают рутину.</p></div>
+            <div class="service-card__tags"><span>Scripts</span><span>Automation</span></div>
+          </article>
+        </div>
+        <div class="expertise__footer reveal"><p data-i18n="skillsNote">Не нашёл свою задачу в списке? Всё равно напиши — люблю интересные вызовы.</p><a href="https://t.me/kirilniga" target="_blank" rel="noopener noreferrer"><span data-i18n="skillsLink">Давай обсудим</span> ↗</a></div>
+      </div>
+    </section>
+
+    <section class="about section" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <div class="section-kicker reveal"><span>02</span> / <span data-i18n="aboutKicker">НЕМНОГО ОБО МНЕ</span></div>
+        <div class="about__grid">
+          <div class="portrait reveal">
+            <div class="portrait__frame"><img src="assets/kirill-photo.webp" alt="Фотография Кирилла" width="1200" height="1200" loading="eager"/><div class="portrait__scrim"></div><span class="portrait__label">HELLO, IT'S ME</span></div>
+          </div>
+          <div class="about__content reveal delay-1">
+            <span class="about__eyebrow"><span class="about__eyebrow-dot"></span><span data-i18n="aboutTopline">ЗНАКОМЬСЯ, ЭТО Я</span></span>
+            <h2 id="about-title" class="about__title" data-i18n="aboutTitle">Привет ещё раз!<br>Я <em>Кирилл.</em></h2>
+            <p class="about__lead" data-i18n="aboutP1">Мне 16 лет, и я уже успел поработать над десятками самых разных проектов. Люблю разбираться в сложных задачах и превращать их в простые, удобные решения.</p>
+            <p class="about__text" data-i18n="aboutP2">Быстро осваиваю новые технологии, слежу за тем, что происходит в мире разработки, и всегда открыт к свежим идеям. Мне важно не просто написать код, а создать то, что действительно будет полезно.</p>
+            <p class="about__note" data-i18n="aboutPExtra">Кстати, вам не нужен отдельный дизайнер — визуальную часть проекта я тоже беру на себя, чтобы всё выглядело цельно и аккуратно.</p>
+            <div class="about__qualities"><span data-i18n="quality1">Современный подход</span><span data-i18n="quality2">Внимание к деталям</span><span data-i18n="quality3">Любопытство к новому</span></div>
+            <p class="about__closing" data-i18n="aboutP3">Есть идея? С радостью помогу её воплотить. Буду рад твоему сообщению!</p>
+            <a class="text-link" href="https://t.me/kirilniga" target="_blank" rel="noopener noreferrer"><span data-i18n="aboutLink">Написать мне в Telegram</span><span class="text-link__arrow">↗</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section" id="contact" aria-labelledby="contact-title"><div class="container"><div class="contact__panel reveal">
+      <span class="contact__kicker"><span class="contact__signal"></span><span data-i18n="contactKicker">ЕСТЬ ИДЕЯ? ЭТО НАЧАЛО.</span></span>
+      <h2 id="contact-title" data-i18n="contactTitle">Давай создадим<br><em>что-нибудь классное.</em></h2>
+      <p data-i18n="contactDesc">Расскажи о своей задумке, даже если она пока существует только у тебя в голове. Вместе разберёмся, как её реализовать.</p>
+      <a class="button button--contact" href="https://t.me/kirilniga" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="m21.8 4.2-3.1 15c-.23 1.06-.84 1.33-1.7.83l-4.7-3.47-2.27 2.19c-.25.25-.46.46-.94.46l.34-4.77 8.7-7.86c.38-.34-.08-.53-.59-.19L6.8 13.16l-4.64-1.45c-1.01-.32-1.03-1.01.21-1.5L20.5 3.2c.84-.31 1.58.19 1.3 1Z"/></svg><span data-i18n="contactButton">Написать в Telegram</span><span>↗</span></a>
+      <div class="contact__orbit contact__orbit--a" aria-hidden="true"></div><div class="contact__orbit contact__orbit--b" aria-hidden="true"></div>
+    </div></div></section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer__inner"><a class="footer__brand" href="#home">kirill<span>.</span></a><span data-i18n="footerLine">Сделано с любовью.</span><div class="footer__right"><a href="https://t.me/kirilniga" target="_blank" rel="noopener noreferrer">Telegram ↗</a><span>© 2026</span></div></div></footer>
+</body>
+</html>
