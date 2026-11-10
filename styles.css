@@ -257,3 +257,7 @@ html[data-theme="graphite"]{--bg:#0a0b0d;--bg-deep:#060709;--surface:#111417;--s
 .story-core__code{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:40px;letter-spacing:-.075em;font-weight:500;color:var(--accent);white-space:nowrap;line-height:1}
 .expertise__footer{gap:12px}
 @media(max-width:700px){.story-core__code{font-size:31px}}
+
+/* Three compact language toggles on narrow screens */
+.language-switch{gap:6px;flex-shrink:0}
+@media(max-width:420px){.language-switch{gap:5px}.language-switch__btn{font-size:10px}.language-switch__divider{height:12px}.header-actions{gap:7px}}

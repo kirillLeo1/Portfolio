@@ -1,6 +1,66 @@
 (() => {
   'use strict';
   const strings = {
+    uk: {
+      "documentTitle": "Кирило — розробник | Портфоліо",
+      "navHome": "Головна",
+      "navSkills": "Напрями",
+      "navAbout": "Про мене",
+      "navContact": "Контакти",
+      "headerContact": "Написати мені",
+      "heroEyebrow": "РОЗРОБНИК · DIGITAL & CODE",
+      "heroHello": "Привіт,",
+      "heroName": "я Кирило!",
+      "heroLead": "Створюю Telegram-ботів, сайти, скрипти та все, що можна втілити за допомогою коду. Перетворюю ідеї на рішення, які працюють.",
+      "statOrders": "виконаних<br>замовлень",
+      "statClients": "клієнтів, чиї проєкти<br>працюють на моєму сервері",
+      "ctaTalk": "Обговорити проєкт",
+      "ctaAbout": "Більше про мене",
+      "skillsKicker": "ЧИМ Я ЗАЙМАЮСЯ",
+      "skillsTitle": "Технології — це інструмент.<br><span>Головне — твоя ідея.</span>",
+      "skillsDescription": "Допомагаю перетворювати завдання й задуми на зручні цифрові інструменти. Від невеликого скрипту до повноцінного вебпроєкту.",
+      "storyKicker": "",
+      "storyTitle": "Одна ідея —<br><em>безліч можливостей.</em>",
+      "storyDesc": "",
+      "storyCore": "ваша ідея → готовий продукт",
+      "storyTelegram": "Telegram-боти",
+      "storyTelegramSub": "Сценарії · інтеграції",
+      "storyWeb": "Сайти та Web",
+      "storyWebSub": "Дизайн · зручність",
+      "storyAuto": "Автоматизація",
+      "storyAutoSub": "Менше рутини · більше результату",
+      "storyFootnote": "",
+      "tagIntegrations": "Інтеграції",
+      "service1Title": "Telegram-боти",
+      "service1Desc": "Продумані сценарії, інтеграції із сервісами та автоматизація завдань просто в Telegram.",
+      "service2Title": "Сайти та вебсервіси",
+      "service2Desc": "Лендинги, інтерфейси та вебрішення, якими приємно користуватися і які легко розвивати.",
+      "service3Title": "Автоматизація",
+      "service3Desc": "Скрипти, інструменти та нестандартні рішення, які заощаджують час і позбавляють рутини.",
+      "skillsNote": "Не знайшов свого завдання у списку? Усе одно напиши — люблю цікаві виклики.",
+      "skillsLink": "Обговорімо",
+      "aboutKicker": "ТРОХИ ПРО МЕНЕ",
+      "aboutTopline": "ЗНАЙОМИМОСЯ",
+      "aboutTitle": "Привіт ще раз!<br>Я <em>Кирило.</em>",
+      "aboutP1": "Мені 16 років, і я вже встиг попрацювати над десятками різних проєктів. Люблю розбиратися зі складними завданнями й перетворювати їх на прості та зручні рішення.",
+      "aboutP2": "Швидко опановую нові технології, стежу за новинками у світі розробки й завжди відкритий до свіжих ідей. Для мене важливо не просто написати код, а створити те, що справді приноситиме користь.",
+      "aboutPExtra": "До речі, вам не потрібен окремий дизайнер — візуальну частину проєкту я теж беру на себе, щоб усе виглядало цілісно й охайно.",
+      "quality1": "Сучасний підхід",
+      "quality2": "Увага до деталей",
+      "quality3": "Цікавість до нового",
+      "aboutP3": "Маєш ідею? Із радістю допоможу втілити її в життя. Буду радий твоєму повідомленню!",
+      "aboutLink": "Написати мені в Telegram",
+      "contactKicker": "МАЄШ ІДЕЮ? ЦЕ ВЖЕ ПОЧАТОК.",
+      "contactTitle": "Створімо разом<br><em>щось класне.</em>",
+      "contactDesc": "Розкажи про свій задум, навіть якщо він поки існує лише у твоїй уяві. Разом з’ясуємо, як його реалізувати.",
+      "contactButton": "Написати в Telegram",
+      "footerLine": "Зроблено з любов’ю.",
+      "paletteTitle": "Обери настрій",
+      "paletteViolet": "Туманна слива",
+      "palettePetrol": "Нічний нефрит",
+      "paletteGraphite": "М’який графіт",
+      "paletteBtn": "Палітра"
+},
     ru: {
       documentTitle: 'Кирилл — разработчик | Портфолио',
       navHome:'Главная',navSkills:'Направления',navAbout:'Обо мне',navContact:'Контакты',headerContact:'Написать мне',
@@ -9,7 +69,7 @@
       skillsKicker:'ЧЕМ Я ЗАНИМАЮСЬ',skillsTitle:'Технологии — это инструмент.<br><span>Главное — твоя идея.</span>',skillsDescription:'Помогаю превратить задачи и задумки в удобные цифровые инструменты. От небольшого скрипта до полноценного веб-проекта.',
       storyKicker:'',storyTitle:'Одна идея —<br><em>множество возможностей.</em>',storyDesc:'',storyCore:'ваша идея → рабочий продукт',storyTelegram:'Telegram-боты',storyTelegramSub:'Сценарии · интеграции',storyWeb:'Сайты и Web',storyWebSub:'Красота · удобство',storyAuto:'Автоматизация',storyAutoSub:'Меньше рутины · больше дела',storyFootnote:'',
       tagIntegrations:'Интеграции',service1Title:'Telegram-боты',service1Desc:'Умные сценарии, интеграции с сервисами и автоматизация задач прямо внутри Telegram.',service2Title:'Сайты и веб-сервисы',service2Desc:'Лендинги, интерфейсы и веб-решения, которые приятно использовать и легко развивать.',service3Title:'Автоматизация',service3Desc:'Скрипты, инструменты и нестандартные решения, которые экономят время и убирают рутину.',skillsNote:'Не нашёл свою задачу в списке? Всё равно напиши — люблю интересные вызовы.',skillsLink:'Давай обсудим',
-      aboutKicker:'НЕМНОГО ОБО МНЕ',aboutTopline:'ЗНАКОМЬСЯ, ЭТО Я',aboutTitle:'Привет ещё раз!<br>Я <em>Кирилл.</em>',aboutP1:'Мне 18 лет, и я уже успел поработать над десятками самых разных проектов. Люблю разбираться в сложных задачах и превращать их в простые, удобные решения.',aboutP2:'Быстро осваиваю новые технологии, слежу за тем, что происходит в мире разработки, и всегда открыт к свежим идеям. Мне важно не просто написать код, а создать то, что действительно будет полезно.',aboutPExtra:'Кстати, вам не нужен отдельный дизайнер — визуальную часть проекта я тоже беру на себя, чтобы всё выглядело цельно и аккуратно.',quality1:'Современный подход',quality2:'Внимание к деталям',quality3:'Любопытство к новому',aboutP3:'Есть идея? С радостью помогу её воплотить. Буду рад твоему сообщению!',aboutLink:'Написать мне в Telegram',
+      aboutKicker:'НЕМНОГО ОБО МНЕ',aboutTopline:'ЗНАКОМЬСЯ, ЭТО Я',aboutTitle:'Привет ещё раз!<br>Я <em>Кирилл.</em>',aboutP1:'Мне 16 лет, и я уже успел поработать над десятками самых разных проектов. Люблю разбираться в сложных задачах и превращать их в простые, удобные решения.',aboutP2:'Быстро осваиваю новые технологии, слежу за тем, что происходит в мире разработки, и всегда открыт к свежим идеям. Мне важно не просто написать код, а создать то, что действительно будет полезно.',aboutPExtra:'Кстати, вам не нужен отдельный дизайнер — визуальную часть проекта я тоже беру на себя, чтобы всё выглядело цельно и аккуратно.',quality1:'Современный подход',quality2:'Внимание к деталям',quality3:'Любопытство к новому',aboutP3:'Есть идея? С радостью помогу её воплотить. Буду рад твоему сообщению!',aboutLink:'Написать мне в Telegram',
       contactKicker:'ЕСТЬ ИДЕЯ? ЭТО НАЧАЛО.',contactTitle:'Давай создадим<br><em>что-нибудь классное.</em>',contactDesc:'Расскажи о своей задумке, даже если она пока существует только у тебя в голове. Вместе разберёмся, как её реализовать.',contactButton:'Написать в Telegram',footerLine:'Сделано с любовью.',paletteTitle:'Выбери атмосферу',paletteViolet:'Туманная слива',palettePetrol:'Ночной нефрит',paletteGraphite:'Мягкий графит',paletteBtn:'Палитра'
     },
     en: {
@@ -27,9 +87,25 @@
   const root = document.documentElement;
   const getSaved = (key, fallback) => {try{return localStorage.getItem(key)||fallback}catch{return fallback}};
   const save = (key,value) => {try{localStorage.setItem(key,value)}catch{}};
-  // Language switching is independent of color palette selection.
+  // Device language on first visit; user choice takes priority on future visits.
+  const LANGUAGE_PREF_KEY = 'kirill-portfolio-language-choice-v5';
+  const languages = ['uk','ru','en'];
+  const resolveLanguage = value => {
+    const primary = String(value || '').trim().toLowerCase().split(/[-_]/)[0];
+    return languages.includes(primary) ? primary : null;
+  };
+  const getDeviceLanguage = () => {
+    // Browsers provide preferred locales ordered by priority.
+    const browserLanguages = (navigator.languages && navigator.languages.length)
+      ? navigator.languages : [navigator.language];
+    for (const locale of browserLanguages) {
+      const matched = resolveLanguage(locale);
+      if (matched) return matched;
+    }
+    return 'uk';
+  };
   const applyLanguage = language => {
-    const lang = language === 'en' ? 'en' : 'ru';
+    const lang = resolveLanguage(language) || 'uk';
     root.lang = lang;
     for (const element of document.querySelectorAll('[data-i18n]')) {
       const key = element.dataset.i18n;
@@ -43,12 +119,16 @@
       button.classList.toggle('is-active', selected);
       button.setAttribute('aria-pressed', String(selected));
     });
-    save('kirill-portfolio-lang', lang);
   };
   document.querySelectorAll('[data-lang]').forEach(button =>
-    button.addEventListener('click', () => applyLanguage(button.dataset.lang))
+    button.addEventListener('click', () => {
+      const chosen = resolveLanguage(button.dataset.lang) || 'uk';
+      save(LANGUAGE_PREF_KEY, chosen);
+      applyLanguage(chosen);
+    })
   );
-  applyLanguage(getSaved('kirill-portfolio-lang', 'ru'));
+  const userPreference = resolveLanguage(getSaved(LANGUAGE_PREF_KEY, ''));
+  applyLanguage(userPreference || getDeviceLanguage());
 
   const fixedTheme='graphite';
   const applyTheme=()=>{
